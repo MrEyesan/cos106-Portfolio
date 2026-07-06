@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner – Jemine Eyesan</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">JE<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <section class="page-header section">
+      <div class="container">
+        <span class="section-label">Organisation</span>
+        <h1>Academic <span>Planner</span></h1>
+        <p class="hero__bio" style="max-width:560px;">
+          Track assignments, study sessions, and deadlines. Add tasks, mark them done, and
+          stay on top of your academic workload.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="planner-wrap">
+
+          <!-- Summary -->
+          <div class="planner-summary" id="plannerSummary">
+            <div class="summary-item"><strong id="totalCount">0</strong> Total</div>
+            <div class="summary-item"><strong id="pendingCount">0</strong> Pending</div>
+            <div class="summary-item"><strong id="doneCount">0</strong> Completed</div>
+            <div class="summary-item"><strong id="highCount">0</strong> High Priority</div>
+          </div>
+
+          <!-- Add Task Form -->
+          <div class="planner-form" id="plannerForm">
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="Add a new task e.g. Submit COS 106 assignment..."
+              maxlength="120"
+              aria-label="Task description"
+            />
+            <select id="prioritySelect" aria-label="Task priority">
+              <option value="medium">🟡 Medium</option>
+              <option value="high">🔴 High</option>
+              <option value="low">🟢 Low</option>
+            </select>
+            <select id="categorySelect" aria-label="Task category">
+              <option value="Assignment">📝 Assignment</option>
+              <option value="Study">📖 Study</option>
+              <option value="Project">🛠️ Project</option>
+              <option value="Exam">📋 Exam</option>
+              <option value="Other">📌 Other</option>
+            </select>
+            <button class="btn btn-primary" id="addTaskBtn" onclick="addTask()">+ Add Task</button>
+          </div>
+
+          <!-- Filters -->
+          <div class="filter-bar" id="taskFilterBar">
+            <button class="filter-btn active" data-tf="all" onclick="filterTasks('all', this)">All</button>
+            <button class="filter-btn" data-tf="pending" onclick="filterTasks('pending', this)">Pending</button>
+            <button class="filter-btn" data-tf="done" onclick="filterTasks('done', this)">Completed</button>
+            <button class="filter-btn" data-tf="high" onclick="filterTasks('high', this)">High Priority</button>
+          </div>
+
+          <!-- Task List -->
+          <div class="task-list" id="taskList" aria-live="polite"></div>
+
+          <!-- Empty State (shown when no tasks) -->
+          <div class="empty-state" id="emptyState" style="display:none;">
+            <div style="font-size:3rem; margin-bottom:1rem;">📋</div>
+            <p style="font-size:1rem; font-weight:600; color: var(--clr-text);">No tasks here yet</p>
+            <p style="font-size:0.875rem;">Add your first task above to get started.</p>
+          </div>
+
+          <!-- Clear completed -->
+          <div style="margin-top: 1.5rem; display:flex; justify-content:flex-end;">
+            <button class="btn btn-sm" onclick="clearCompleted()" style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); color: var(--clr-muted);">
+              🗑️ Clear Completed
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2025 Jemine Eyesan. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer__links">
+        <a href="https://github.com/MrEyesan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/eyesan-oritsejemineyin-b71a961a3" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/planner.js"></script>
+</body>
+</html>

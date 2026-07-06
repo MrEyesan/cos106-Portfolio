@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Jemine Eyesan</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">JE<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <section class="page-header section">
+      <div class="container">
+        <span class="section-label">Let's Talk</span>
+        <h1>Get In <span>Touch</span></h1>
+        <p class="hero__bio" style="max-width:560px;">
+          Open to IT support, IAM, helpdesk, and cybersecurity opportunities. Also available
+          for web project discussions through Narhbiss Web Agency.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Info side -->
+          <div class="contact-info fade-in">
+            <h2 class="section-heading" style="font-size:1.4rem; margin-bottom:1.5rem;">Contact Information</h2>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-body">
+                <h4>Location</h4>
+                <p>Lagos, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div class="contact-info-body">
+                <h4>Email</h4>
+                <p><a href="mailto:eyesan@example.com">eyesan@example.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">💼</div>
+              <div class="contact-info-body">
+                <h4>LinkedIn</h4>
+                <p><a href="https://linkedin.com/in/eyesan-oritsejemineyin-b71a961a3" target="_blank" rel="noopener">linkedin.com/in/eyesan</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🐙</div>
+              <div class="contact-info-body">
+                <h4>GitHub</h4>
+                <p><a href="https://github.com/MrEyesan" target="_blank" rel="noopener">github.com/MrEyesan</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🌐</div>
+              <div class="contact-info-body">
+                <h4>Web Agency</h4>
+                <p>Narhbiss Web Agency — UI/UX &amp; project management</p>
+              </div>
+            </div>
+
+            <!-- Availability card -->
+            <div class="card" style="margin-top: 1.5rem; background: linear-gradient(135deg, var(--clr-bg-card), var(--clr-bg-raised)); border-color: rgba(0,212,255,0.25);">
+              <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem;">
+                <span style="width:10px; height:10px; border-radius:50%; background: #22c55e; display:inline-block; box-shadow: 0 0 0 3px rgba(34,197,94,0.25);"></span>
+                <strong style="font-size:0.9rem;">Available for opportunities</strong>
+              </div>
+              <p style="font-size:0.82rem; color: var(--clr-muted);">Actively seeking IT support, helpdesk, and cybersecurity roles in Lagos. Prefer hybrid or remote.</p>
+            </div>
+          </div>
+
+          <!-- Form side -->
+          <div class="fade-in">
+            <div id="formSuccess" class="form-success" role="alert">
+              ✅ Message sent! I'll get back to you within 24 hours.
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Full Name *</label>
+                  <input type="text" id="fname" name="fname" placeholder="John Doe" autocomplete="name" />
+                  <span class="field-error" id="fnameErr"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" />
+                  <span class="field-error" id="emailErr"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="08012345678" autocomplete="tel" />
+                <span class="field-error" id="phoneErr"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Job opportunity / Project enquiry / General" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or project..."></textarea>
+                <span class="field-error" id="messageErr"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+                Send Message →
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2025 Jemine Eyesan. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer__links">
+        <a href="https://github.com/MrEyesan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/eyesan-oritsejemineyin-b71a961a3" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

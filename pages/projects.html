@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Jemine Eyesan</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">JE<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <section class="page-header section">
+      <div class="container">
+        <span class="section-label">Portfolio</span>
+        <h1>My <span>Projects</span></h1>
+        <p class="hero__bio" style="max-width:600px;">
+          A selection of cybersecurity, web, and cloud projects built during practicum training,
+          academic coursework, and independent study.
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="section" style="padding-top:0; padding-bottom:0;">
+      <div class="container">
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="security">Security</button>
+          <button class="filter-btn" data-filter="cloud">Cloud &amp; IAM</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1 -->
+          <div class="project-card card fade-in" data-category="security">
+            <div class="project-img">
+              <div class="project-img-placeholder p1">🍯</div>
+            </div>
+            <div class="project-tags">
+              <span class="chip">Kali Linux</span>
+              <span class="chip">Cowrie</span>
+              <span class="chip">SSH</span>
+            </div>
+            <h3 class="project-title">Cowrie Honeypot Deployment</h3>
+            <p class="project-desc">
+              Deployed a Cowrie SSH/Telnet honeypot on a Linux VM to capture attacker behaviour,
+              log brute-force attempts, and generate threat intelligence reports. Includes analysis
+              of attacker TTPs and recommendations for defensive hardening.
+            </p>
+            <ul class="project-highlights" style="margin: 0.8rem 0; padding-left: 1.2rem; list-style: disc; color: var(--clr-muted); font-size: 0.875rem;">
+              <li>Captured 200+ simulated intrusion sessions</li>
+              <li>Integrated with ELK Stack for log visualisation</li>
+              <li>Documented attacker commands and payloads</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/MrEyesan" target="_blank" class="btn btn-outline btn-sm">GitHub →</a>
+              <a href="#" class="btn btn-sm" style="background: var(--clr-bg-card); color: var(--clr-muted); border: 1px solid var(--clr-border);">View Report</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card card fade-in" data-category="cloud">
+            <div class="project-img">
+              <div class="project-img-placeholder p2">🔐</div>
+            </div>
+            <div class="project-tags">
+              <span class="chip">PowerShell</span>
+              <span class="chip">Azure AD</span>
+              <span class="chip">Graph API</span>
+            </div>
+            <h3 class="project-title">Azure AD Privileged Role Audit Script</h3>
+            <p class="project-desc">
+              Built a PowerShell script leveraging the Microsoft Graph API to audit privileged role
+              assignments in Azure AD. Surfaces over-provisioned accounts, stale assignments, and
+              missing MFA — outputting a structured JSON report for security review.
+            </p>
+            <ul class="project-highlights" style="margin: 0.8rem 0; padding-left: 1.2rem; list-style: disc; color: var(--clr-muted); font-size: 0.875rem;">
+              <li>Automated role audit replacing manual review</li>
+              <li>Flags Global Admin accounts without MFA</li>
+              <li>Exports findings to JSON for SIEM ingestion</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/MrEyesan" target="_blank" class="btn btn-outline btn-sm">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card card fade-in" data-category="web">
+            <div class="project-img">
+              <div class="project-img-placeholder p3">🌐</div>
+            </div>
+            <div class="project-tags">
+              <span class="chip">Next.js</span>
+              <span class="chip">UI/UX</span>
+              <span class="chip">Render</span>
+            </div>
+            <h3 class="project-title">MONSUF NGO Website</h3>
+            <p class="project-desc">
+              Led the UI/UX design and project management for MONSUF, a Lagos-based medical
+              nonprofit, through Narhbiss Web Agency. Delivered a full GTmetrix audit, formal
+              proposal, contract, and two design feedback rounds on a Next.js site hosted on Render.
+            </p>
+            <ul class="project-highlights" style="margin: 0.8rem 0; padding-left: 1.2rem; list-style: disc; color: var(--clr-muted); font-size: 0.875rem;">
+              <li>First paying Narhbiss Web Agency client</li>
+              <li>GTmetrix performance audit → 40% speed improvement</li>
+              <li>Full project lifecycle from discovery to deployment</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm">Live Site (Simulated)</a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card card fade-in" data-category="security">
+            <div class="project-img">
+              <div class="project-img-placeholder p1">📋</div>
+            </div>
+            <div class="project-tags">
+              <span class="chip">Pentesting</span>
+              <span class="chip">OWASP</span>
+              <span class="chip">Report Writing</span>
+            </div>
+            <h3 class="project-title">University Web Pentest Report</h3>
+            <p class="project-desc">
+              Conducted an authorised penetration test against school websites as part of practicum
+              work. Produced a professional pentest report documenting 16 findings across OWASP Top 10
+              categories, with severity ratings, PoC evidence, and remediation steps.
+            </p>
+            <ul class="project-highlights" style="margin: 0.8rem 0; padding-left: 1.2rem; list-style: disc; color: var(--clr-muted); font-size: 0.875rem;">
+              <li>16 documented vulnerabilities (4 Critical, 6 High)</li>
+              <li>Includes SQL injection and XSS proof-of-concept</li>
+              <li>Full executive summary + technical appendix</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/MrEyesan" target="_blank" class="btn btn-outline btn-sm">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card card fade-in" data-category="cloud">
+            <div class="project-img">
+              <div class="project-img-placeholder p2">📊</div>
+            </div>
+            <div class="project-tags">
+              <span class="chip">ELK Stack</span>
+              <span class="chip">Hydra</span>
+              <span class="chip">SIEM</span>
+            </div>
+            <h3 class="project-title">ELK Stack SIEM + Brute Force Detection</h3>
+            <p class="project-desc">
+              Deployed Elasticsearch, Logstash, and Kibana (ELK) to build a functional SIEM
+              environment. Configured Hydra-driven brute force attack simulation and built detection
+              rules and Kibana dashboards to visualise threat activity in real time.
+            </p>
+            <ul class="project-highlights" style="margin: 0.8rem 0; padding-left: 1.2rem; list-style: disc; color: var(--clr-muted); font-size: 0.875rem;">
+              <li>Full ELK Stack configured on local VM environment</li>
+              <li>Custom Kibana dashboard for SSH brute force alerts</li>
+              <li>Automated alerting on threshold breach</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/MrEyesan" target="_blank" class="btn btn-outline btn-sm">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card card fade-in" data-category="web">
+            <div class="project-img">
+              <div class="project-img-placeholder p3">🎓</div>
+            </div>
+            <div class="project-tags">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+            </div>
+            <h3 class="project-title">Student Portfolio Website (This Site)</h3>
+            <p class="project-desc">
+              This very website — built as my COS 106 practical term project at MIVA Open University.
+              A fully responsive multi-page portfolio featuring semantic HTML5, external CSS, CSS Grid,
+              Flexbox, scroll animations, an interactive academic planner, and full JS form validation.
+            </p>
+            <ul class="project-highlights" style="margin: 0.8rem 0; padding-left: 1.2rem; list-style: disc; color: var(--clr-muted); font-size: 0.875rem;">
+              <li>5 pages — Home, About, Projects, Planner, Contact</li>
+              <li>Fully mobile-responsive with hamburger nav</li>
+              <li>JS task manager with add/complete/delete/filter</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/MrEyesan" target="_blank" class="btn btn-outline btn-sm">GitHub →</a>
+              <a href="../index.html" class="btn btn-primary btn-sm">View Live →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2025 Jemine Eyesan. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer__links">
+        <a href="https://github.com/MrEyesan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/eyesan-oritsejemineyin-b71a961a3" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Project filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+            card.style.animation = 'fadeInUp 0.3s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

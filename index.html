@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jemine Eyesan — Cybersecurity & IAM professional, web developer, and CS student at MIVA Open University." />
+  <title>Jemine Eyesan | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">JE<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/planner.html">Planner</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/projects.html">Projects</a>
+    <a href="pages/planner.html">Planner</a>
+    <a href="pages/contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container">
+        <div class="hero__grid">
+          <!-- Text -->
+          <div>
+            <span class="hero__eyebrow">Open to Work · Lagos, Nigeria</span>
+            <h1>Jemine<br><span>Eyesan</span></h1>
+            <p class="hero__bio">
+              Cybersecurity &amp; IAM professional building secure digital infrastructure.
+              CS student at MIVA Open University. Founder of Narhbiss Web Agency.
+            </p>
+            <div class="hero__ctas">
+              <a href="pages/projects.html" class="btn btn-primary">View Projects &rarr;</a>
+              <a href="pages/contact.html" class="btn btn-outline">Get In Touch</a>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats">
+              <div>
+                <div class="stat__num">4+</div>
+                <div class="stat__label">Certifications</div>
+              </div>
+              <div>
+                <div class="stat__num">3+</div>
+                <div class="stat__label">Years Experience</div>
+              </div>
+              <div>
+                <div class="stat__num">16</div>
+                <div class="stat__label">Pentest Findings</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo -->
+          <div class="hero__photo-wrap">
+            <div class="hero__photo-frame">
+              <div class="hero__photo-placeholder">👨🏾‍💻</div>
+            </div>
+            <div class="hero__badge">🛡️ Security+ Certified</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CERTS -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <span class="section-label fade-in">Credentials</span>
+        <h2 class="section-heading fade-in">Certifications &amp; Qualifications</h2>
+        <p class="section-sub fade-in">Industry-recognised credentials across cybersecurity, cloud, and networking.</p>
+
+        <div class="table-wrap fade-in">
+          <table>
+            <thead>
+              <tr>
+                <th>Certification</th>
+                <th>Issuer</th>
+                <th>Domain</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>CompTIA Security+</strong></td>
+                <td>CompTIA</td>
+                <td>Cybersecurity</td>
+                <td><span class="chip chip-green">✓ Active</span></td>
+              </tr>
+              <tr>
+                <td><strong>ISC2 CC</strong></td>
+                <td>ISC²</td>
+                <td>Cybersecurity</td>
+                <td><span class="chip chip-green">✓ Active</span></td>
+              </tr>
+              <tr>
+                <td><strong>Microsoft AZ-900</strong></td>
+                <td>Microsoft</td>
+                <td>Cloud (Azure)</td>
+                <td><span class="chip chip-green">✓ Active</span></td>
+              </tr>
+              <tr>
+                <td><strong>Aptech Certified Network Engineer</strong></td>
+                <td>Aptech</td>
+                <td>Networking</td>
+                <td><span class="chip chip-green">✓ Active</span></td>
+              </tr>
+              <tr>
+                <td><strong>SC-300</strong> (Microsoft Identity &amp; Access)</td>
+                <td>Microsoft</td>
+                <td>IAM</td>
+                <td><span class="chip chip-amber">⏳ In Progress</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK SKILLS -->
+    <section class="section" style="background: var(--clr-bg-card); border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border);">
+      <div class="container">
+        <span class="section-label fade-in">What I Do</span>
+        <h2 class="section-heading fade-in">Core Competencies</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 2rem;">
+          <div class="card fade-in">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🛡️</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Cybersecurity</h3>
+            <p style="font-size: 0.875rem; color: var(--clr-muted); line-height: 1.65;">Penetration testing, vulnerability assessment, SIEM configuration, honeypot deployment, and threat analysis.</p>
+          </div>
+          <div class="card fade-in">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🔐</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Identity &amp; Access Management</h3>
+            <p style="font-size: 0.875rem; color: var(--clr-muted); line-height: 1.65;">Azure AD, privileged role auditing (PowerShell + Graph API), JIT access, zero trust architecture.</p>
+          </div>
+          <div class="card fade-in">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">☁️</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Cloud Security</h3>
+            <p style="font-size: 0.875rem; color: var(--clr-muted); line-height: 1.65;">AWS IAM privilege escalation analysis, WAF configuration, and Azure cloud security fundamentals.</p>
+          </div>
+          <div class="card fade-in">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🌐</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Web Technologies</h3>
+            <p style="font-size: 0.875rem; color: var(--clr-muted); line-height: 1.65;">HTML, CSS, JavaScript, responsive design. Agency founder managing web projects from discovery to delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO / MEDIA SHOWCASE -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label fade-in">Media</span>
+        <h2 class="section-heading fade-in">Cybersecurity Awareness</h2>
+        <p class="section-sub fade-in">A quick explainer on why Identity &amp; Access Management is the frontline of modern security.</p>
+        <div class="fade-in" style="max-width: 720px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--clr-border); background: var(--clr-bg-card);">
+          <video
+            controls
+            width="100%"
+            poster=""
+            style="display: block;"
+            aria-label="Cybersecurity explainer video"
+          >
+            <source src="" type="video/mp4" />
+            <!-- Fallback for browsers without video support -->
+            <div style="padding: 3rem; text-align: center; color: var(--clr-muted);">
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎬</p>
+              <p>Your browser doesn't support HTML5 video. <a href="#">Download the video</a> instead.</p>
+            </div>
+          </video>
+          <div style="padding: 1.25rem;">
+            <p style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.25rem;">Why IAM Matters in 2025</p>
+            <p style="font-size: 0.8rem; color: var(--clr-muted);">3:42 · Identity &amp; Access Management · Cybersecurity Fundamentals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="card fade-in" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; background: linear-gradient(135deg, var(--clr-bg-card), var(--clr-bg-raised)); border-color: rgba(0,212,255,0.25);">
+          <div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.4rem;">Ready to work together?</h3>
+            <p style="color: var(--clr-muted); font-size: 0.9rem;">Open to IT support, IAM, and cloud security roles — remote preferred.</p>
+          </div>
+          <a href="pages/contact.html" class="btn btn-primary">Send a Message &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2025 Jemine Eyesan. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer__links">
+        <a href="https://github.com/MrEyesan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/eyesan-oritsejemineyin-b71a961a3" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
